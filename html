@@ -1,83 +1,87 @@
 <!DOCTYPE html>
+
+<html>
+
 <head>
-  <title>Active Uth</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Active Uth</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style type="text/css">
-    body {
-      background-color: #cccccc;
-    }
-    .heading {
-      text-align: center;
-    }
-    .content {
-      text-align: center;
-    }
-    .jumbotron.content {
-      background-size: 100%;
-    }
-    #contentone {
-      background-image: url('http://vspot_prod_images.s3.amazonaws.com/uploads/group/image/4430/9766337560114.jpg');
-    }
-    #contenttwo {
-      background-image: url('http://images.christianpost.com/full/48886/bible-candle.jpg');
-      background-size: 100%;
-    }
-    #contentthree {
-      background-image: url('http://ecx.images-amazon.com/images/I/61r5JSD0SVL._SX522_.jpg');
-      position: relative;
-      height: 300px;
-    }
-    .contentheading {
-      font-family: 'Helvetica Neue', 'Arial', sans-serif;
-      color: #fff;
-      font-size: 36pt;
-      font-weight: 700;
-      text-shadow: 0 0 10px #000;
-      margin-top: 5%;
-    }
-    .contentheading a:hover {
-      color: white;
-    }
-    .red {
-      font-family: 'Helvetica Neue', 'Arial', sans-serif;
-      color: red;
-      font-size: 36pt;
-      font-weight: 700;
-      text-shadow: 0 0 10px #000;
-      margin-top: 5%;
-    }
-    .imgblured {
-      -webkit-filter: blur(5px);
-      filter: blur(5px);
-    };
-    #default {
-      position: absolute;
-      text-align: center;
-      top: auto;
-      bottom: auto;
-      left: auto;
-      right: auto;
-    }
-    #collapsed {
-      text-align: center;
-      top: auto;
-      bottom: auto;
-      left: auto;
-      right: auto;
-    }
-    .nav-pills {
-      height: 100%;
-      background-color: #fff;
-      border-radius: 4px;
-    }
-/*
+	body {
+		background-color: #cccccc;
+	}
+	.heading {
+		text-align: center;
+	}
+	.content {
+		text-align: center;
+	}
+	.jumbotron.content {
+		background-size: 100%;
+	}
+	#contentone {
+		background-image: url('http://vspot_prod_images.s3.amazonaws.com/uploads/group/image/4430/9766337560114.jpg');
+	}
+	#contenttwo {
+		background-image: url('http://images.christianpost.com/full/48886/bible-candle.jpg');
+		background-size: 100%;
+	}
+	#contentthree {
+		background-image: url('http://ecx.images-amazon.com/images/I/61r5JSD0SVL._SX522_.jpg');
+		position: relative;
+		height: 300px;
+	}
+	.contentheading {
+		font-family: 'Helvetica Neue', 'Arial', sans-serif;
+		color: #fff;
+		font-size: 36pt;
+		font-weight: 700;
+		text-shadow: 0 0 10px #000;
+		margin-top: 5%;
+	}
+	.contentheading a:hover {
+		color: white;
+	}
+	.red {
+		font-family: 'Helvetica Neue', 'Arial', sans-serif;
+		color: red;
+		font-size: 36pt;
+		font-weight: 700;
+		text-shadow: 0 0 10px #000;
+		margin-top: 5%;
+	}
+	.imgblured {
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
+	}
+	;
+	#default {
+		position: absolute;
+		text-align: center;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
+	}
+	#collapsed {
+		text-align: center;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
+	}
+	.nav-pills {
+		height: 100%;
+		background-color: #fff;
+		border-radius: 4px;
+	}
+	/*
     #sidebarprimary {
       margin-right: -250px;
       right: 250px;
@@ -99,78 +103,95 @@
       padding: 0;
     }
 */
-    #sidebarcollapsible {
-      float: left;
-    }
-    
-  </style>
+	
+	#sidebarcollapsible {
+		float: left;
+	}
+</style>
+
 <body>
-  <!-- nav bar -->
-  <nav class="navbar navbar-default navbar-collapse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gustavo">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="tech_website.html">Active Youth</a>
-      </div>
-      <div class="" id="gustavo">
-        <ul class="nav navbar-nav" style="padding-left: 20px;">
-        <!-- testing search() -->
-          <li><a onclick="queryWithPrompt()" href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-          <li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Featured<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="http://phoneadvisor.siterubix.com">PhoneAdvisor.com</a></li>
-              <li><a href="http://www.pixelclubs.org">PIxEL Clubs</a></li>
-              <li><a href="#">Be the Change</a></li>
-            </ul>
-          <li><a href="http://ethanl.ee/">Contact</a></li>
-          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reviews and Info
+	<!-- nav bar -->
+	<nav class="navbar navbar-default navbar-collapse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gustavo">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="tech_website.html">Active Youth</a>
+			</div>
+			<div class="" id="gustavo">
+				<ul class="nav navbar-nav" style="padding-left: 20px;">
+					<!-- testing search() -->
+					<li><a onclick="queryWithPrompt()" href="#"><span class="glyphicon glyphicon-search"></span></a>
+					</li>
+					<li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a>
+					</li>
+					<li class="active"><a href="#">Home</a>
+					</li>
+					<li><a href="#">News</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Featured<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="http://phoneadvisor.siterubix.com">PhoneAdvisor.com</a>
+							</li>
+							<li><a href="http://www.pixelclubs.org">PIxEL Clubs</a>
+							</li>
+							<li><a href="#">Be the Change</a>
+							</li>
+						</ul>
+						<li><a href="http://ethanl.ee/">Contact</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reviews and Info
             <span class="caret"></span>
           </a>
-          <ul class="dropdown-menu" role="menu">
-          <!--<li class="divider"></li>-->
-            <li><a href="http://www.halowaypoint.com/en-us">Gaming</a></li>
-            <li><a href="http:www.phoneadvisor.siterubix.com">Phones</a></li>
-            <li><a href="#">PC's</a></li>
-            <li><a href="#">ethanl.ee</a></li>
-          </ul>
-          </li>
-        </ul>
-      <form onsubmit="queryWithNav()" class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <div class="input-group">
-<!--            <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>-->
-            <input type="text" id="search-input" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-        </div>
-      </form>
-    </div>
-  </div>
-</nav>
-<!-- end of nav bar -->
-<div class="container col-md-8 col-md-offset-2">
-  <div class="jumbotron">
-     <h1 class="heading">Stonecreek Active Youth</h1>
-        <h2 class="heading">The official website of Stonecreek Christian's Church's Active Youth program.  Here you can view our events calendar, upcoming events, view contact information, and you can even get involved in live bible study group chats centered around teens.</h2>
-          <div class="center-block" id="sig"></div>
-  </div>
-  <div class="jumbotron content" id="contentone">
-    <h2 class="contentheading"><a class="contentheading" href="http:www.phoneadvisor.siterubix.com">View the events calendar here!</a></h2>
-  </div>
-  <div class="jumbotron content" id="contenttwo">
-    <h2 class="contentheading"><a class="contentheading" href="http://sports.yahoo.com/mlb/">Check out our chat room bible study discussions.</a></h2>
-  </div>
-  <div class="jumbotron content" id="contentthree">
-    <h2 class="contentheading"><a  class="contentheading" href="https://github.com/GustavoZertuche">Get in touch with our Youth Pastor Robert Jenkins or our Pastor John Beeman.</a></h2>
-  </div>
+							<ul class="dropdown-menu" role="menu">
+								<!--<li class="divider"></li>-->
+								<li><a href="http://www.halowaypoint.com/en-us">Gaming</a>
+								</li>
+								<li><a href="http:www.phoneadvisor.siterubix.com">Phones</a>
+								</li>
+								<li><a href="#">PC's</a>
+								</li>
+								<li><a href="#">ethanl.ee</a>
+								</li>
+							</ul>
+						</li>
+				</ul>
+				<form onsubmit="queryWithNav()" class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<div class="input-group">
+							<!--            <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>-->
+							<input type="text" id="search-input" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- end of nav bar -->
+	<div class="container col-md-8 col-md-offset-2">
+		<div class="jumbotron">
+			<h1 class="heading">Stonecreek Active Youth</h1>
+			<h2 class="heading">The official website of Stonecreek Christian's Church's Active Youth program.  Here you can view our events calendar, upcoming events, view contact information, and you can even get involved in live bible study group chats centered around teens.</h2>
+			<div class="center-block" id="sig"></div>
+		</div>
+		<div class="jumbotron content" id="contentone">
+			<h2 class="contentheading"><a class="contentheading" href="http:www.phoneadvisor.siterubix.com">View the events calendar here!</a></h2>
+		</div>
+		<div class="jumbotron content" id="contenttwo">
+			<h2 class="contentheading"><a class="contentheading" href="http://sports.yahoo.com/mlb/">Check out our chat room bible study discussions.</a></h2>
+		</div>
+		<div class="jumbotron content" id="contentthree">
+			<h2 class="contentheading"><a  class="contentheading" href="https://github.com/GustavoZertuche">Get in touch with our Youth Pastor Robert Jenkins or our Pastor John Beeman.</a></h2>
+		</div>
+	</div>
 </body>
+
+</html>
